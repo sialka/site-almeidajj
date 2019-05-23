@@ -1,0 +1,68 @@
+<section class="content-section bg-dark text-white text-center" id="contact">
+
+	<div class="container">
+		<div class="content-section-heading">        
+
+		    <h3 class="text-secondary mb-0">Dúvidas</h3>
+		    <h2 class="display-2">Entre em contato</h2>
+		    <br>
+			<form action="#contact" method="" class="form-horizontal" role="form">	
+
+				<div class="row align-items-center">
+
+					<div class="col-md-4">
+
+					 	<div class="text-center">  
+
+							<strong>E-mail:</strong><br>
+							dalmeidajj@ig.com.br<br>
+							<strong>Endereço:</strong><br>
+							 Rua Henrique Dumont 19, São Paulo<br>
+							<strong>Telefones:</strong><br>
+							+55 11 3542-5788 <br>
+							+55 11 97030-2465
+						
+						</div>
+
+					</div>
+
+					<div class="col-md-8">
+
+						<div class="form-group">				
+							<input type="text" class="form-control" name="name" placeholder="Nome">
+						</div>			
+						
+						<div class="form-group">				
+							<input type="text" class="form-control" name="name" placeholder="Email">
+						</div>			
+
+						<div class="form-group">				
+							<input type="text" class="form-control" name="name" placeholder="Telefone">
+						</div>			
+
+						<div class="form-group">				
+							<select class="custom-select mr-sm-2" name="">					
+								{% for unidade, endereco in unidades %}
+									<option value="{{ unidade }}">{{ unidade }}</option>
+								{% endfor %}
+							</select>
+						</div>	
+
+						<div class="form-group">				
+							<textarea rows="4" cols="50" class="form-control" name="name" placeholder="Mensagem"></textarea>
+						</div>			
+
+						<div class="form-group text-right">
+							<button type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+
+</section>

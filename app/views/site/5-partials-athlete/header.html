@@ -1,0 +1,130 @@
+<header class="bg-athlete">
+
+	<div class="container">	
+
+		<div class="area-athlete">
+
+			<div class="logo">
+				<a href="/">          
+					{% include 'site/logo-min.html' %}            
+				</a>        
+			</div>  			
+		
+			<div id="carouselControls" class="carousel slide" data-ride="carousel">
+		
+				<div class="carousel-inner carousel-border box-shadow">
+
+						{% for name, active in photos %}
+							
+						<div class="carousel-item {{ active }}">
+						<img src="{{ name }}" alt="slide" class="d-block w-100 rounded">
+						</div>
+
+						{% endfor %}
+
+				</div>					
+
+				<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+				
+			</div>  
+					
+			<hr>
+			<h1 class="text-center">
+				<sup class="lead">Atleta</sup><br>
+				{{ name }}
+			</h1>
+			<hr>
+		
+			<ul class="nav ul-margin-bottom" id="myTab" role="tablist">
+				
+				<li class="btn-margin-right">
+					<a class="text-dark hover-color" href="/">
+						<i class="fa fa-arrow-left fa-2x"></i>
+					</a>
+				</li>
+				<li class="btn-margin-right">
+					<a class="text-dark hover-color active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+						<i class="fa fa-user fa-2x"></i>
+					</a>
+				</li>
+				<li class="btn-margin-right">
+					<a class="text-dark hover-color" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">
+						<i class="fa fa-trophy fa-2x"></i>
+					</a>					
+				</li>
+
+			</ul>
+		
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+		
+							<div class="card text-white bg-dark box-shadow">
+								<div class="card-header">
+									<h5 class="card-title text-center">Sobre o Atleta</h5>									
+								</div>						
+								<div class="card-body bg-white area-content-athlete">																	
+									
+									<p><small>Apelido:</small> <strong>{{nickname}}</strong></p>
+									<p><small>Faixa:</small> <strong>{{belt}}</strong></p>
+									<hr>
+									<p class="text-center bg-secondary text-white"><small>Equipe</small> <strong>{{team}}</strong> <small>Preparador</small> <strong>{{preparer}}</strong></p>
+									<hr>
+									<p><small>Patrocinio:</small></p>
+									<ul>
+									{% for name in sponsors %}												
+										<li>{{name}}</li>
+									{% endfor %}
+									</ul>
+									<hr>
+									<p><small>Apoiadores:</small></p>
+									<ul>
+									{% for name in supporters %}												
+										<li>{{name}}</li>
+									{% endfor %}
+									</ul>
+									<hr>
+									
+								</div>		
+							</div>
+		
+						</div>
+						<div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+								
+							<div class="card text-white bg-dark box-shadow">
+								<div class="card-header">
+									<h5 class="card-title text-center">Títulos</h5>									
+								</div>						
+								<div class="card-body bg-white area-content">	
+		
+									<ul class="list-group text-dark">							
+											{% for name in championships %}												
+												<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-left">
+													<strong>{{ name }}</strong>
+													<span>
+														<i class="fa fa-award fa-2x text-dark"></i>
+													</span>
+													
+												</li>
+											{% endfor %}
+									</ul>	
+		
+								</div>							
+							</div>
+		
+						</div>
+						
+					</div>			
+ 
+
+
+		</div>
+	</div>	
+	
+</header>

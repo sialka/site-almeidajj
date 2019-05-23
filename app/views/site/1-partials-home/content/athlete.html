@@ -1,0 +1,25 @@
+<p class="lead text-left">Nossos Atletas</p>
+
+<div class="row">
+
+    <div class="col-lg-10 mx-auto">
+
+        <hr>
+
+        <div class="row">
+        
+            {% for key, value in athletes %}            
+            <div class="col-md-6">            
+
+                <a class="link-mestres" href="{{ value }}">
+                    {{ stringUcFirst(key) }}
+                </a>              
+            
+            </div>
+            {% endfor %}
+
+        </div>   
+
+    </div>
+
+</div>

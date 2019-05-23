@@ -1,0 +1,19 @@
+{% extends 'site/master.html' %}
+
+{% block site %}	
+
+	<!-- Navigation -->
+	{% include 'site/partials-home/navigation.html' %}
+
+	<!-- Header -->
+	{% include 'site/partials-subsidiary/header.html' %}
+
+	<!-- Google Maps -->
+	<section id="contact" class="map">
+		<iframe src="{{ maps }}" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>    
+  	</section>	
+
+	<!-- Services -->
+	{% include 'site/partials-subsidiary/services.html' %}	
+
+{% endblock %}

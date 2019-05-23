@@ -1,0 +1,45 @@
+<header class="mestres --d-flex position-relative">		
+
+	<div class="container">				
+		<div class="jumbotron back-masther">
+      
+			<!-- logo -->		
+			<div class="text-center">
+				<a href="/#teachers">
+					{% include 'site/logo-min.html' %}						
+				</a>
+			</div>
+
+  			<!-- About -->			
+			<hr>	
+			<h1 class="display-4">{{ name }}</h1>	
+			<hr>	
+			<p class="lead">{{ about }}</p>			
+			<hr>
+			
+			<!-- Foto e Titulos -->
+		 	<div class="row">
+				<div class="col-md-6 text-center align-top smart-windows">		
+					<img class="img-fluid border-photo" src="{{ photo }}">
+				</div>
+				<div class="col-md-6 smart-windows">				
+					<div class="card bg-dark text-white shadow">
+						<div class="card-header">
+							<h5 class="card-title text-center" >Titulos</h5>
+						</div>
+						<ul class="list-group list-group-flush text-dark">
+							{% for name in championships %}
+								<li class="list-group-item list-group-item-action">
+									<i class="fa fa-check text-success"></i>
+									{{ name }}
+								</li>
+							{% endfor %}
+						</ul>						
+					</div>					
+				</div>
+			</div>	
+
+		</div>
+	</div>		
+
+</header>

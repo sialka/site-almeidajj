@@ -1,0 +1,18 @@
+# Dependency directories
+vendor/*
+
+# Data
+app/data/*.php
+
+# Image
+public_html/assets/img/*
+public_html/assets/fontawesome-free/*.txt
+public_html/assets/fontawesome-free/*.json
+public_html/assets/fontawesome-free/*.md
+public_html/assets/fontawesome-free/sprites/*
+public_html/assets/fontawesome-free/svgs/*
+public_html/assets/fontawesome-free/webfonts/*
+
+
+# Others
+server.bat
