@@ -1,0 +1,25 @@
+<p class="lead text-left">Nossos Mestres</p>
+
+<div class="row">
+
+    <div class="col-lg-10 mx-auto">
+
+        <hr>
+
+        <div class="row">
+        
+            {% for key, value in mestres %}            
+            <div class="col-md-6">            
+
+                <a class="link-mestres effect-names" href="{{ value }}">
+                    {{ stringUcFirst(key) }}
+                </a>              
+            
+            </div>
+            {% endfor %}
+
+        </div>   
+
+    </div>
+
+</div>

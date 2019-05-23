@@ -1,0 +1,24 @@
+<section class="content-section bg-primary text-white text-center" id="services">
+  
+  <div class="container">
+    <div class="content-section-heading">        
+      <h3 class="text-secondary mb-0">Academias</h3>
+      <h2 class="display-2">Conheça as nossas Unidades</h2>
+    </div>      
+    <br>
+    <div class="row">                
+      <!-- { % for unit, name in units_name % } -->
+      {% for unit, url in units %}
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <h4 class="unidade">
+          <a class="lead effect-units btn-link text-white" href="{{ url }}">
+            <i class="fas fa-map-marker-alt fa-2x text-danger"></i><br>
+            <strong>{{ unit }}</strong>
+          </a>
+        </h4>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+</section>

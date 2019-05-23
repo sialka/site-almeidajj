@@ -1,0 +1,28 @@
+
+a.effect-fire:hover{  
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  text-decoration: none;
+}
+  
+a.effect-neon:hover{
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  text-decoration: none;
+}
+  
+a.effect-units:hover{
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
+  text-decoration: none;
+}
+  
+a.effect-names:hover{
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff, 0 0 100px #0000ff, 0 0 150px #0000ff;
+  text-decoration: none;
+}
+  
+.text-fix{    
+  padding: 1rem 1rem;
+  text-indent: 50px;
+  text-align: justify;
+  line-height: 200%;
+  position: relative;         
+}

@@ -1,0 +1,60 @@
+<header>
+
+	<div class="position-relative">  
+      	      	
+		<!-- logo -->      
+		<div class="logo">
+			<a href="/#services">
+			  {% include 'site/logo-min.html' %}            
+			</a>
+		</div>        	
+
+		<div id="carouselControls" class="carousel slide" data-ride="carousel">
+        
+	        <div class="carousel-inner">
+	          
+	          	
+	          	{% for name, active in photos %}
+	          		
+	          	<div class="carousel-item {{ active }}">
+	            	<img src="{{ name }}" alt="slide" class="d-block w-100">
+	          	</div>
+
+	          	{% endfor %}
+
+	        </div>
+
+	        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+	          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	          <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+	          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	          <span class="sr-only">Next</span>
+	        </a>
+
+	  	</div>    
+
+	</div>	
+	<div class="overlay"></div>
+
+</header>
+
+<section class="unidade-slide text-center bg-dark text-white">
+		    	
+	<span class="small">Unidade</span>
+	<h5 class="text-secondary display-4">{{ subsidiary }}</h5>
+	
+	<i class="fas fa-map text-danger"></i>
+	<span class="small">{{ address }}</span>
+	<br>
+	
+	{% for phone in phones %}	
+		<i class="fa fa-phone text-success"></i>
+		<span class="small">{{ phone }}</span> <br>
+	{% endfor %}
+	
+	<i class="fa fa-envelope text-warning"></i>
+	<span class="small">{{ email }}</span>
+
+</section>

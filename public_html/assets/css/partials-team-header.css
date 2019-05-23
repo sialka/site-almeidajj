@@ -1,0 +1,28 @@
+
+.bg-master {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-equipe.jpg");
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-equipe.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+  }
+
+.area-master{
+    background: rgb(255,255,255,0.8);  
+    border-radius: 5px;
+    padding: 2rem 3rem; 
+    color: black; 
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.margin-top{
+    margin-top: 2rem;
+}
